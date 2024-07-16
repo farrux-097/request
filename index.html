@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Farrux</title>
+    <style type="text/tailwindcss">
+        @layer utilities {
+          .content-auto {
+            content-visibility: auto;
+          }
+        }
+      </style>
+</head>
+<body class="p-5">
+    <div class="flex  gap-[20px]">
+        <ul class="users-list w-full flex justify-between items-center flex-wrap gap-[20px]"></ul>
+        <ul class="posts-list w-full flex justify-between flex-wrap gap-[20px] hidden"></ul>
+        <ul class="comments-list w-full flex justify-between flex-wrap gap-[20px] hidden"></ul>
+    </div>
+    
+
+
+
+    <script src="./js/main.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+      </script>
+</body>
+</html>
